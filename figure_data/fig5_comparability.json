@@ -1,0 +1,301 @@
+{
+  "top_10_algorithms": [
+    [
+      "ANN",
+      78
+    ],
+    [
+      "RF",
+      49
+    ],
+    [
+      "XGBoost",
+      29
+    ],
+    [
+      "GBM",
+      25
+    ],
+    [
+      "RSM",
+      19
+    ],
+    [
+      "DT",
+      18
+    ],
+    [
+      "SVR",
+      16
+    ],
+    [
+      "LR",
+      16
+    ],
+    [
+      "SVM",
+      11
+    ],
+    [
+      "LightGBM",
+      11
+    ]
+  ],
+  "algorithm_frequency": [
+    [
+      "ANN",
+      78
+    ],
+    [
+      "RF",
+      49
+    ],
+    [
+      "XGBoost",
+      29
+    ],
+    [
+      "GBM",
+      25
+    ],
+    [
+      "RSM",
+      19
+    ],
+    [
+      "DT",
+      18
+    ],
+    [
+      "SVR",
+      16
+    ],
+    [
+      "LR",
+      16
+    ],
+    [
+      "SVM",
+      11
+    ],
+    [
+      "LightGBM",
+      11
+    ],
+    [
+      "GPR",
+      10
+    ],
+    [
+      "CatBoost",
+      9
+    ],
+    [
+      "CNN",
+      7
+    ],
+    [
+      "AdaBoost",
+      7
+    ],
+    [
+      "Ridge",
+      7
+    ],
+    [
+      "LASSO",
+      6
+    ],
+    [
+      "KNN",
+      5
+    ],
+    [
+      "ANFIS",
+      5
+    ],
+    [
+      "ElasticNet",
+      4
+    ],
+    [
+      "AutoML",
+      4
+    ],
+    [
+      "ET",
+      4
+    ],
+    [
+      "LSTM",
+      4
+    ],
+    [
+      "Bayesian",
+      3
+    ],
+    [
+      "DNN",
+      2
+    ],
+    [
+      "Stacking",
+      2
+    ],
+    [
+      "Bagging",
+      1
+    ],
+    [
+      "ELM",
+      1
+    ],
+    [
+      "KRR",
+      1
+    ],
+    [
+      "ERT",
+      1
+    ],
+    [
+      "GBT",
+      1
+    ]
+  ],
+  "evaluation_metrics_frequency": [
+    [
+      "R2",
+      112
+    ],
+    [
+      "RMSE",
+      79
+    ],
+    [
+      "MAE",
+      59
+    ],
+    [
+      "MSE",
+      47
+    ],
+    [
+      "other",
+      26
+    ],
+    [
+      "R",
+      23
+    ],
+    [
+      "MAPE",
+      15
+    ],
+    [
+      "RE",
+      4
+    ],
+    [
+      "adjusted_R2",
+      2
+    ],
+    [
+      "RAE",
+      2
+    ],
+    [
+      "RRSE",
+      2
+    ],
+    [
+      "SSE",
+      1
+    ],
+    [
+      "accuracy",
+      1
+    ],
+    [
+      "precision",
+      1
+    ],
+    [
+      "recall",
+      1
+    ],
+    [
+      "F1-score",
+      1
+    ],
+    [
+      "AUC",
+      1
+    ],
+    [
+      "STD",
+      1
+    ],
+    [
+      "AAPRE",
+      1
+    ],
+    [
+      "NSE",
+      1
+    ],
+    [
+      "RRMSE",
+      1
+    ],
+    [
+      "MAD",
+      1
+    ],
+    [
+      "RSE",
+      1
+    ],
+    [
+      "WAPE",
+      1
+    ],
+    [
+      "VAF",
+      1
+    ],
+    [
+      "MBE",
+      1
+    ]
+  ],
+  "code_available_rate": 0.127,
+  "data_available_rate": 0.3175,
+  "n_algorithms_compared_distribution": {
+    "1": 38,
+    "2": 33,
+    "4": 20,
+    "3": 13,
+    "5": 6,
+    "6": 5,
+    "8": 4,
+    "7": 3,
+    "9": 2,
+    "15": 1,
+    "12": 1
+  },
+  "software_tools_distribution": {
+    "Python": 51,
+    "MATLAB": 41,
+    "other": 21,
+    "Design Expert": 3,
+    "RASPA": 3,
+    "R": 3,
+    "Design-Expert": 3,
+    "JMP": 2,
+    "SPSS": 2,
+    "Materials Studio": 1,
+    "zeo++": 1,
+    "Weka": 1
+  }
+}
