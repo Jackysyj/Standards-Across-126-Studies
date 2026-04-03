@@ -1,0 +1,254 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ML4Env Paper Extraction Schema v2",
+  "description": "Structured extraction schema for ML papers in environmental adsorption/degradation prediction. Covers 5 pillars: Data Bias, Validation, Interpretability, Comparability, Deployment.",
+  "type": "object",
+  "required": [
+    "paper_id", "paper_title", "doi", "research_type",
+    "data_source", "dataset_size", "target_variable", "pollutants", "materials",
+    "validation_method", "best_metric_type", "best_metric_value",
+    "interpretability_methods", "ml_algorithms", "evaluation_metrics"
+  ],
+  "properties": {
+
+    "_comment_meta": { "const": "=== Basic Metadata (links to targeted_relevant_papers.json via paper_id) ===" },
+
+    "paper_id": {
+      "type": "integer",
+      "description": "Sequential ID matching the paper's position in targeted_relevant_papers.json (1-indexed)"
+    },
+    "paper_title": {
+      "type": "string",
+      "description": "Full title of the paper"
+    },
+    "doi": {
+      "type": ["string", "null"],
+      "description": "DOI of the paper (e.g., '10.1021/acs.est.0c02526')"
+    },
+    "research_type": {
+      "type": "string",
+      "enum": ["adsorption", "degradation", "both"],
+      "description": "Primary research domain"
+    },
+
+    "_comment_pillar1": { "const": "=== Pillar 1: Data Bias & Quality ===" },
+
+    "data_source": {
+      "type": "string",
+      "enum": ["literature", "experimental", "database", "mixed"],
+      "description": "Origin of ML training data. 'literature' = collected from published papers; 'experimental' = authors' own experiments; 'database' = computational/simulation databases (e.g., CoRE MOF, CSD); 'mixed' = combination"
+    },
+    "dataset_size": {
+      "type": ["integer", "null"],
+      "description": "Total number of data points used for ML (training + testing). For RSM/CCD designs, count = number of experimental runs. For literature collection, count = total collected entries. null if not clearly stated."
+    },
+    "n_literature_sources": {
+      "type": ["integer", "null"],
+      "description": "If data_source is 'literature', how many published papers were cited as data sources. null if not applicable or not stated."
+    },
+    "target_variable": {
+      "type": "object",
+      "description": "The prediction target (y variable) of the ML model",
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": ["qmax", "removal_efficiency", "rate_constant", "log_Kd", "adsorption_capacity", "selectivity", "uptake", "other"],
+          "description": "Standardized name of the prediction target"
+        },
+        "name_original": {
+          "type": "string",
+          "description": "Original name as used in the paper (e.g., 'maximum adsorption capacity', 'photo-degradation rate constant')"
+        },
+        "unit": {
+          "type": ["string", "null"],
+          "description": "Unit of the target variable (mg/g, %, min⁻¹, mmol/g, L/g, etc.)"
+        },
+        "range_min": {
+          "type": ["number", "null"],
+          "description": "Minimum y-value in the dataset. null if not extractable."
+        },
+        "range_max": {
+          "type": ["number", "null"],
+          "description": "Maximum y-value in the dataset. null if not extractable."
+        }
+      },
+      "required": ["name", "unit"]
+    },
+    "pollutants": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of pollutants/adsorbates studied. Use standardized names where possible (e.g., 'Methylene Blue', 'Congo Red', 'Pb(II)', 'Cd(II)', 'CO2', 'Xe/Kr')."
+    },
+    "materials": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of adsorbent/catalyst materials studied. Use standardized names (e.g., 'biochar', 'activated carbon', 'MOF', 'TiO2', 'zeolite')."
+    },
+    "data_selection_criteria_described": {
+      "type": "boolean",
+      "description": "true if the paper explicitly describes how training data was selected, filtered, or quality-controlled"
+    },
+    "data_preprocessing": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["normalization", "standardization", "log_transform", "outlier_removal", "missing_value_imputation", "one_hot_encoding", "label_encoding", "none_reported"]
+      },
+      "description": "Data preprocessing steps applied before ML training"
+    },
+
+    "_comment_pillar2": { "const": "=== Pillar 2: Model Validation ===" },
+
+    "validation_method": {
+      "type": "string",
+      "enum": ["random_split", "k_fold", "LOOCV", "external", "nested_cv", "none_reported"],
+      "description": "Primary validation strategy. 'random_split' = single train/test split; 'k_fold' = k-fold cross-validation; 'LOOCV' = leave-one-out CV; 'external' = tested on independent external dataset; 'nested_cv' = nested cross-validation; 'none_reported' = no clear validation described"
+    },
+    "k_fold_k": {
+      "type": ["integer", "null"],
+      "description": "If validation_method is 'k_fold', the value of k (e.g., 5, 10). null otherwise."
+    },
+    "train_test_ratio": {
+      "type": ["string", "null"],
+      "description": "Train:test split ratio as string (e.g., '80:20', '70:30', '70:15:15' for train:val:test). null if not specified."
+    },
+    "grouped_splitting": {
+      "type": "boolean",
+      "description": "true if data was split by study/material/pollutant group to prevent data leakage (e.g., GroupKFold, LeaveOneGroupOut)"
+    },
+    "best_metric_type": {
+      "type": ["string", "null"],
+      "enum": ["R2", "R", "adjusted_R2", null],
+      "description": "Type of the best performance metric reported. CRITICAL: distinguish R² (coefficient of determination) from R (Pearson correlation coefficient). null if neither is reported."
+    },
+    "best_metric_value": {
+      "type": ["number", "null"],
+      "description": "Value of the best performance metric on the TEST/validation set (not training set). Must correspond to best_metric_type."
+    },
+    "best_rmse": {
+      "type": ["number", "null"],
+      "description": "Best RMSE on the test/validation set. null if not reported."
+    },
+    "reports_train_and_test": {
+      "type": "boolean",
+      "description": "true if the paper reports performance metrics for BOTH training and test sets (enables overfitting detection)"
+    },
+    "external_validation": {
+      "type": "boolean",
+      "description": "true if the model was tested on a truly independent/external dataset (different lab, different material class, or independent experimental verification)"
+    },
+    "n_features": {
+      "type": ["integer", "null"],
+      "description": "Total number of input features (X variables) used in the ML model. null if not clearly stated."
+    },
+    "hyperparameter_tuning": {
+      "type": "string",
+      "enum": ["grid_search", "random_search", "bayesian_optimization", "genetic_algorithm", "manual", "none_reported"],
+      "description": "Method used for hyperparameter optimization"
+    },
+    "best_algorithm": {
+      "type": ["string", "null"],
+      "description": "The algorithm the paper recommends as best-performing. Use standardized abbreviation from ml_algorithms enum."
+    },
+
+    "_comment_pillar3": { "const": "=== Pillar 3: Interpretability ===" },
+
+    "interpretability_methods": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["SHAP", "LIME", "PDP", "ICE", "feature_importance", "sensitivity_analysis", "attention_weights", "none"]
+      },
+      "description": "All interpretability/explainability methods used. Can be multiple (e.g., ['SHAP', 'PDP'])."
+    },
+    "n_features_used": {
+      "type": ["integer", "null"],
+      "description": "Number of features actually input to the final model (after feature selection). May differ from n_features if feature selection was applied."
+    },
+    "feature_selection_method": {
+      "type": "string",
+      "enum": ["correlation_filter", "PCA", "RFE", "mutual_information", "variance_threshold", "domain_knowledge", "none_reported"],
+      "description": "Feature selection method used before or during model training"
+    },
+    "top_3_features": {
+      "type": "array",
+      "items": { "type": "string" },
+      "maxItems": 3,
+      "description": "Top 3 most important features as identified by interpretability analysis. Empty array if not reported."
+    },
+    "mechanistic_discussion": {
+      "type": "boolean",
+      "description": "true if the paper connects ML interpretability results (e.g., SHAP values) to known adsorption/degradation mechanisms with scientific reasoning"
+    },
+
+    "_comment_pillar4": { "const": "=== Pillar 4: Comparability & Reproducibility ===" },
+
+    "ml_algorithms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "RF", "XGBoost", "LightGBM", "CatBoost", "GBM", "AdaBoost",
+          "ANN", "DNN", "CNN", "RNN", "LSTM",
+          "SVM", "SVR", "GPR",
+          "DT", "KNN", "LR", "Ridge", "LASSO", "ElasticNet",
+          "AutoML", "RSM", "other"
+        ]
+      },
+      "description": "All ML algorithms used in the paper. Use STANDARDIZED abbreviations only."
+    },
+    "n_algorithms_compared": {
+      "type": "integer",
+      "description": "Number of distinct ML algorithms compared in the paper"
+    },
+    "evaluation_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["R2", "RMSE", "MAE", "MAPE", "MSE", "R", "NSE", "AARD", "RE", "other"]
+      },
+      "description": "All evaluation metrics reported"
+    },
+    "software_tools": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Python", "MATLAB", "R", "Weka", "SPSS", "JMP", "other"]
+      },
+      "description": "Software/programming languages used for ML modeling"
+    },
+    "code_available": {
+      "type": "boolean",
+      "description": "true if source code or software is publicly shared (GitHub, Zenodo, etc.)"
+    },
+    "data_available": {
+      "type": "boolean",
+      "description": "true if the training dataset is publicly available or shared as supplementary material"
+    },
+    "compared_with_prior_work": {
+      "type": "boolean",
+      "description": "true if the paper compares its model performance with previously published ML models on the same or similar data"
+    },
+
+    "_comment_pillar5": { "const": "=== Pillar 5: Real-World Deployment ===" },
+
+    "water_type": {
+      "type": "string",
+      "enum": ["synthetic", "real_wastewater", "both", "not_specified", "not_applicable"],
+      "description": "Type of water/medium used in experiments. 'not_applicable' for gas-phase or computational studies."
+    },
+    "discusses_scalability": {
+      "type": "boolean",
+      "description": "true if the paper discusses scale-up potential, practical application, or real-world deployment"
+    },
+    "engineering_validation": {
+      "type": "boolean",
+      "description": "true if ML model predictions are validated with real engineering/pilot-scale data"
+    },
+    "cost_analysis": {
+      "type": "boolean",
+      "description": "true if economic or cost-benefit analysis is included"
+    }
+  },
+  "additionalProperties": false
+}

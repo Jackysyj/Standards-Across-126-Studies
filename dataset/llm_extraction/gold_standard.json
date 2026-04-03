@@ -1,0 +1,720 @@
+[
+  {
+    "paper_id": 2,
+    "paper_title": "Functionalization of biochar using SDS/SAP nanomicelles enhanced its immobilization capacity for dyes and heavy metals in water",
+    "doi": "10.1038/s41598-025-91229-z",
+    "research_type": "adsorption",
+    "data_source": "experimental",
+    "dataset_size": null,
+    "n_literature_sources": null,
+    "target_variable": {
+      "name": "adsorption_capacity",
+      "name_original": "MB adsorption capacity",
+      "unit": "mg/g",
+      "range_min": null,
+      "range_max": null
+    },
+    "pollutants": [
+      "Methylene blue (MB)",
+      "Pb(II)",
+      "Cd(II)",
+      "Bisphenol A (BPA)",
+      "P-nitrophenol (PNP)"
+    ],
+    "materials": [
+      "SDMBC (SDS/SAP nanomicelle-modified biochar)"
+    ],
+    "data_selection_criteria_described": false,
+    "data_preprocessing": [
+      "normalization"
+    ],
+    "validation_method": "random_split",
+    "k_fold_k": null,
+    "train_test_ratio": "80:20",
+    "grouped_splitting": false,
+    "best_metric_type": "R2",
+    "best_metric_value": 0.976,
+    "best_rmse": 3.433,
+    "reports_train_and_test": true,
+    "external_validation": false,
+    "n_features": 5,
+    "hyperparameter_tuning": "none_reported",
+    "best_algorithm": "XGBoost",
+    "interpretability_methods": [
+      "SHAP"
+    ],
+    "n_features_used": 5,
+    "feature_selection_method": "none_reported",
+    "top_3_features": [
+      "time",
+      "Ratio (SDS/SAP)",
+      "pH"
+    ],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "ANN",
+      "CNN",
+      "SVR",
+      "LR",
+      "GBM",
+      "AdaBoost",
+      "XGBoost"
+    ],
+    "n_algorithms_compared": 7,
+    "evaluation_metrics": [
+      "R2",
+      "RMSE",
+      "MAE"
+    ],
+    "software_tools": [
+      "MATLAB"
+    ],
+    "code_available": false,
+    "data_available": true,
+    "compared_with_prior_work": false,
+    "water_type": "synthetic",
+    "discusses_scalability": false,
+    "engineering_validation": false,
+    "cost_analysis": true
+  },
+  {
+    "paper_id": 3,
+    "paper_title": "Removal of Cu(II) using three low-cost adsorbents and prediction of adsorption using artificial neural networks",
+    "doi": "10.1007/s13201-019-0924-x",
+    "research_type": "adsorption",
+    "data_source": "experimental",
+    "dataset_size": null,
+    "n_literature_sources": null,
+    "target_variable": {
+      "name": "removal_efficiency",
+      "name_original": "Percent removal of copper ions",
+      "unit": "%",
+      "range_min": null,
+      "range_max": 99.7
+    },
+    "pollutants": [
+      "Cu(II)"
+    ],
+    "materials": [
+      "Groundnut seed cake powder",
+      "Sesame seed cake powder",
+      "Coconut cake powder"
+    ],
+    "data_selection_criteria_described": false,
+    "data_preprocessing": [
+      "none_reported"
+    ],
+    "validation_method": "random_split",
+    "k_fold_k": null,
+    "train_test_ratio": null,
+    "grouped_splitting": false,
+    "best_metric_type": "R",
+    "best_metric_value": 0.989,
+    "best_rmse": null,
+    "reports_train_and_test": false,
+    "external_validation": false,
+    "n_features": 5,
+    "hyperparameter_tuning": "none_reported",
+    "best_algorithm": "ANN",
+    "interpretability_methods": [
+      "none"
+    ],
+    "n_features_used": 5,
+    "feature_selection_method": "manual",
+    "top_3_features": [],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "ANN"
+    ],
+    "n_algorithms_compared": 1,
+    "evaluation_metrics": [
+      "R"
+    ],
+    "software_tools": [
+      "MATLAB"
+    ],
+    "code_available": false,
+    "data_available": false,
+    "compared_with_prior_work": false,
+    "water_type": "synthetic",
+    "discusses_scalability": false,
+    "engineering_validation": false,
+    "cost_analysis": false
+  },
+  {
+    "paper_id": 5,
+    "paper_title": "Metaheuristic optimization algorithms-based prediction modeling for titanium dioxide-Assisted photocatalytic degradation of air contaminants",
+    "doi": "10.1016/j.rineng.2024.102637",
+    "research_type": "degradation",
+    "data_source": "literature",
+    "dataset_size": 200,
+    "n_literature_sources": 26,
+    "target_variable": {
+      "name": "rate_constant",
+      "name_original": "-log(k) photo-degradation rate",
+      "unit": "min-1/cm2 (log-transformed)",
+      "range_min": 0.0,
+      "range_max": 9.8
+    },
+    "pollutants": [
+      "VOCs",
+      "toluene",
+      "benzene",
+      "formaldehyde",
+      "acetaldehyde"
+    ],
+    "materials": [
+      "TiO2"
+    ],
+    "data_selection_criteria_described": false,
+    "data_preprocessing": [
+      "log_transform",
+      "outlier_removal"
+    ],
+    "validation_method": "k_fold",
+    "k_fold_k": 10,
+    "train_test_ratio": "80:20",
+    "grouped_splitting": false,
+    "best_metric_type": "R",
+    "best_metric_value": 0.9,
+    "best_rmse": 0.25,
+    "reports_train_and_test": true,
+    "external_validation": false,
+    "n_features": 8,
+    "hyperparameter_tuning": "genetic",
+    "best_algorithm": "RF",
+    "interpretability_methods": [
+      "SHAP",
+      "PDP"
+    ],
+    "n_features_used": 8,
+    "feature_selection_method": "correlation",
+    "top_3_features": [
+      "reactor size",
+      "photocatalyst dosage",
+      "humidity"
+    ],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "RF"
+    ],
+    "n_algorithms_compared": 6,
+    "evaluation_metrics": [
+      "R",
+      "RMSE",
+      "MAE"
+    ],
+    "software_tools": [
+      "MATLAB"
+    ],
+    "code_available": false,
+    "data_available": false,
+    "compared_with_prior_work": false,
+    "water_type": "not_applicable",
+    "discusses_scalability": false,
+    "engineering_validation": false,
+    "cost_analysis": false
+  },
+  {
+    "paper_id": 6,
+    "paper_title": "Predicting Aqueous Adsorption of Organic Compounds onto Biochars, Carbon Nanotubes, Granular Activated Carbons, and Resins with Machine Learning",
+    "doi": "10.1021/acs.est.0c02526",
+    "research_type": "adsorption",
+    "data_source": "literature",
+    "dataset_size": 4102,
+    "n_literature_sources": 586,
+    "target_variable": {
+      "name": "log_Kd",
+      "name_original": "log Kd",
+      "unit": "L/g",
+      "range_min": null,
+      "range_max": null
+    },
+    "pollutants": [
+      "organic compounds (165 chemicals including phenols, anilines, chlorobenzenes, PAHs)"
+    ],
+    "materials": [
+      "biochar",
+      "carbon nanotubes (CNTs)",
+      "granular activated carbon (GAC)",
+      "polymeric resins"
+    ],
+    "data_selection_criteria_described": true,
+    "data_preprocessing": [
+      "standardization"
+    ],
+    "validation_method": "LOOCV",
+    "k_fold_k": null,
+    "train_test_ratio": null,
+    "grouped_splitting": true,
+    "best_metric_type": "R2",
+    "best_metric_value": 0.91,
+    "best_rmse": 0.23,
+    "reports_train_and_test": true,
+    "external_validation": false,
+    "n_features": 8,
+    "hyperparameter_tuning": "grid_search",
+    "best_algorithm": "ANN",
+    "interpretability_methods": [
+      "SHAP"
+    ],
+    "n_features_used": 8,
+    "feature_selection_method": "manual",
+    "top_3_features": [
+      "E (excess molar refraction)",
+      "B (hydrogen bond basicity)",
+      "V (McGowan volume)"
+    ],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "ANN",
+      "SVM",
+      "RF",
+      "Ridge",
+      "LASSO",
+      "ElasticNet"
+    ],
+    "n_algorithms_compared": 6,
+    "evaluation_metrics": [
+      "RMSE",
+      "R2",
+      "MAE"
+    ],
+    "software_tools": [
+      "MATLAB"
+    ],
+    "code_available": true,
+    "data_available": true,
+    "compared_with_prior_work": true,
+    "water_type": "not_applicable",
+    "discusses_scalability": false,
+    "engineering_validation": false,
+    "cost_analysis": false
+  },
+  {
+    "paper_id": 8,
+    "paper_title": "A Study on Machine Learning Methods' Application for Dye Adsorption Prediction onto Agricultural Waste Activated Carbon",
+    "doi": "10.3390/nano11102734",
+    "research_type": "adsorption",
+    "data_source": "literature",
+    "dataset_size": 350,
+    "n_literature_sources": 13,
+    "target_variable": {
+      "name": "adsorption_capacity",
+      "name_original": "adsorption efficiency",
+      "unit": "mg/g",
+      "range_min": null,
+      "range_max": null
+    },
+    "pollutants": [
+      "dyes"
+    ],
+    "materials": [
+      "agricultural waste activated carbon"
+    ],
+    "data_selection_criteria_described": false,
+    "data_preprocessing": [
+      "normalization"
+    ],
+    "validation_method": "random_split",
+    "k_fold_k": null,
+    "train_test_ratio": null,
+    "grouped_splitting": false,
+    "best_metric_type": "R2",
+    "best_metric_value": 0.9,
+    "best_rmse": 0.148,
+    "reports_train_and_test": true,
+    "external_validation": false,
+    "n_features": 9,
+    "hyperparameter_tuning": "grid_search",
+    "best_algorithm": "RF",
+    "interpretability_methods": [
+      "feature_importance"
+    ],
+    "n_features_used": 5,
+    "feature_selection_method": "manual",
+    "top_3_features": [
+      "C0 (initial concentration)",
+      "pore volume",
+      "surface area"
+    ],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "RF",
+      "DT",
+      "GBM"
+    ],
+    "n_algorithms_compared": 3,
+    "evaluation_metrics": [
+      "R2",
+      "RMSE",
+      "MAE"
+    ],
+    "software_tools": [
+      "Python"
+    ],
+    "code_available": false,
+    "data_available": true,
+    "compared_with_prior_work": true,
+    "water_type": "not_applicable",
+    "discusses_scalability": false,
+    "engineering_validation": false,
+    "cost_analysis": false
+  },
+  {
+    "paper_id": 14,
+    "paper_title": "Statistical Modeling and Optimization of Process Parameters for 2,4-Dichlorophenoxyacetic Acid Removal by Using AC/PDMAEMA Hydrogel Adsorbent: Comparison of Different RSM Designs and ANN Training Methods",
+    "doi": "10.3390/w14193061",
+    "research_type": "adsorption",
+    "data_source": "experimental",
+    "dataset_size": 20,
+    "n_literature_sources": null,
+    "target_variable": {
+      "name": "removal_efficiency",
+      "name_original": "Removal of 2,4-D",
+      "unit": "%",
+      "range_min": null,
+      "range_max": 65.01
+    },
+    "pollutants": [
+      "2,4-dichlorophenoxyacetic acid (2,4-D)"
+    ],
+    "materials": [
+      "AC/PDMAEMA hydrogel"
+    ],
+    "data_selection_criteria_described": false,
+    "data_preprocessing": [
+      "normalization"
+    ],
+    "validation_method": "none_reported",
+    "k_fold_k": null,
+    "train_test_ratio": "70:15:15",
+    "grouped_splitting": false,
+    "best_metric_type": "R2",
+    "best_metric_value": 0.9998,
+    "best_rmse": null,
+    "reports_train_and_test": true,
+    "external_validation": false,
+    "n_features": 3,
+    "hyperparameter_tuning": "none_reported",
+    "best_algorithm": "RSM",
+    "interpretability_methods": [
+      "sensitivity_analysis"
+    ],
+    "n_features_used": 3,
+    "feature_selection_method": "manual",
+    "top_3_features": [
+      "pH",
+      "initial concentration of 2,4-D",
+      "activated carbon content"
+    ],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "RSM",
+      "ANN"
+    ],
+    "n_algorithms_compared": 6,
+    "evaluation_metrics": [
+      "R2",
+      "adjusted_R2",
+      "MSE",
+      "R",
+      "C.V"
+    ],
+    "software_tools": [
+      "MATLAB",
+      "other"
+    ],
+    "code_available": false,
+    "data_available": false,
+    "compared_with_prior_work": true,
+    "water_type": "synthetic",
+    "discusses_scalability": false,
+    "engineering_validation": false,
+    "cost_analysis": false
+  },
+  {
+    "paper_id": 17,
+    "paper_title": "Automated Machine Learning-Based Prediction of the Effects of Physicochemical Properties and External Experimental Conditions on Cadmium Adsorption by Biochar",
+    "doi": "10.3390/w17152266",
+    "research_type": "adsorption",
+    "data_source": "literature",
+    "dataset_size": 598,
+    "n_literature_sources": 18,
+    "target_variable": {
+      "name": "adsorption_capacity",
+      "name_original": "Qe",
+      "unit": "mg/g",
+      "range_min": null,
+      "range_max": 105
+    },
+    "pollutants": [
+      "Cadmium (Cd)"
+    ],
+    "materials": [
+      "biochar"
+    ],
+    "data_selection_criteria_described": true,
+    "data_preprocessing": [
+      "none_reported"
+    ],
+    "validation_method": "k_fold",
+    "k_fold_k": 5,
+    "train_test_ratio": "90:10",
+    "grouped_splitting": false,
+    "best_metric_type": "R2",
+    "best_metric_value": 0.918,
+    "best_rmse": 6.529,
+    "reports_train_and_test": true,
+    "external_validation": true,
+    "n_features": 16,
+    "hyperparameter_tuning": "grid_search",
+    "best_algorithm": "AutoML",
+    "interpretability_methods": [
+      "SHAP",
+      "PDP",
+      "feature_importance"
+    ],
+    "n_features_used": 16,
+    "feature_selection_method": "manual",
+    "top_3_features": [
+      "Initial Cd concentration (HMC)",
+      "Stirring speed",
+      "H/C ratio"
+    ],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "AutoML"
+    ],
+    "n_algorithms_compared": 4,
+    "evaluation_metrics": [
+      "R2",
+      "RMSE",
+      "MAE"
+    ],
+    "software_tools": [
+      "Python"
+    ],
+    "code_available": false,
+    "data_available": false,
+    "compared_with_prior_work": false,
+    "water_type": "not_applicable",
+    "discusses_scalability": true,
+    "engineering_validation": false,
+    "cost_analysis": false
+  },
+  {
+    "paper_id": 23,
+    "paper_title": "XGBoost: An Optimal Machine Learning Model with Just Structural Features to Discover MOF Adsorbents of Xe/Kr",
+    "doi": "10.1021/acsomega.1c00100",
+    "research_type": "adsorption",
+    "data_source": "database",
+    "dataset_size": 303991,
+    "n_literature_sources": null,
+    "target_variable": {
+      "name": "selectivity",
+      "name_original": "Xe/Kr adsorption selectivity",
+      "unit": "dimensionless",
+      "range_min": null,
+      "range_max": null
+    },
+    "pollutants": [
+      "Xe",
+      "Kr"
+    ],
+    "materials": [
+      "MOFs"
+    ],
+    "data_selection_criteria_described": true,
+    "data_preprocessing": [
+      "none_reported"
+    ],
+    "validation_method": "k_fold",
+    "k_fold_k": 5,
+    "train_test_ratio": "30:70",
+    "grouped_splitting": false,
+    "best_metric_type": "R2",
+    "best_metric_value": 0.973,
+    "best_rmse": 0.255,
+    "reports_train_and_test": true,
+    "external_validation": false,
+    "n_features": 7,
+    "hyperparameter_tuning": "grid_search",
+    "best_algorithm": "XGBoost",
+    "interpretability_methods": [
+      "feature_importance"
+    ],
+    "n_features_used": 7,
+    "feature_selection_method": "correlation",
+    "top_3_features": [
+      "Vol (pore volume)",
+      "rho (density)",
+      "phi (porosity)"
+    ],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "Ridge",
+      "LASSO",
+      "ElasticNet",
+      "SVM",
+      "GPR",
+      "ANN",
+      "RF",
+      "XGBoost"
+    ],
+    "n_algorithms_compared": 8,
+    "evaluation_metrics": [
+      "R2",
+      "MSE",
+      "MAE",
+      "RMSE"
+    ],
+    "software_tools": [
+      "Python"
+    ],
+    "code_available": false,
+    "data_available": true,
+    "compared_with_prior_work": true,
+    "water_type": "not_applicable",
+    "discusses_scalability": false,
+    "engineering_validation": false,
+    "cost_analysis": false
+  },
+  {
+    "paper_id": 24,
+    "paper_title": "Machine learning and high-throughput computational screening of hydrophobic metal-organic frameworks for capture of formaldehyde from air",
+    "doi": "10.1016/j.gee.2020.06.024",
+    "research_type": "adsorption",
+    "data_source": "database",
+    "dataset_size": 29220,
+    "n_literature_sources": null,
+    "target_variable": {
+      "name": "other",
+      "name_original": "TSC (tradeoff between selectivity and capacity)",
+      "unit": "dimensionless",
+      "range_min": -2.5,
+      "range_max": 0.5
+    },
+    "pollutants": [
+      "formaldehyde"
+    ],
+    "materials": [
+      "hydrophobic metal-organic frameworks (hMOFs)"
+    ],
+    "data_selection_criteria_described": true,
+    "data_preprocessing": [
+      "none_reported"
+    ],
+    "validation_method": "k_fold",
+    "k_fold_k": 5,
+    "train_test_ratio": null,
+    "grouped_splitting": false,
+    "best_metric_type": "R",
+    "best_metric_value": 0.867,
+    "best_rmse": 0.169,
+    "reports_train_and_test": true,
+    "external_validation": false,
+    "n_features": 6,
+    "hyperparameter_tuning": "none_reported",
+    "best_algorithm": "RF",
+    "interpretability_methods": [
+      "feature_importance"
+    ],
+    "n_features_used": 6,
+    "feature_selection_method": "none_reported",
+    "top_3_features": [
+      "KHCHO",
+      "Q0st",
+      "LCD"
+    ],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "ANN",
+      "SVM",
+      "RF"
+    ],
+    "n_algorithms_compared": 4,
+    "evaluation_metrics": [
+      "R",
+      "MAE",
+      "RMSE"
+    ],
+    "software_tools": [
+      "other"
+    ],
+    "code_available": false,
+    "data_available": false,
+    "compared_with_prior_work": false,
+    "water_type": "not_applicable",
+    "discusses_scalability": false,
+    "engineering_validation": false,
+    "cost_analysis": false
+  },
+  {
+    "paper_id": 25,
+    "paper_title": "Enhanced Adsorption Capacity of Methylene Blue Dye onto Kaolin through Acid Treatment: Batch Adsorption and Machine Learning Studies",
+    "doi": "10.3390/w16020243",
+    "research_type": "adsorption",
+    "data_source": "experimental",
+    "dataset_size": 316,
+    "n_literature_sources": null,
+    "target_variable": {
+      "name": "adsorption_capacity",
+      "name_original": "MB adsorption capacity (Y)",
+      "unit": "mg/g",
+      "range_min": null,
+      "range_max": null
+    },
+    "pollutants": [
+      "Methylene blue"
+    ],
+    "materials": [
+      "kaolin (DD3)",
+      "acid-treated kaolin (treated-DD3)"
+    ],
+    "data_selection_criteria_described": false,
+    "data_preprocessing": [
+      "none_reported"
+    ],
+    "validation_method": "random_split",
+    "k_fold_k": null,
+    "train_test_ratio": "70:15:15",
+    "grouped_splitting": false,
+    "best_metric_type": "R2",
+    "best_metric_value": 0.9978,
+    "best_rmse": 1.139,
+    "reports_train_and_test": true,
+    "external_validation": false,
+    "n_features": 6,
+    "hyperparameter_tuning": "bayesian",
+    "best_algorithm": "GPR",
+    "interpretability_methods": [
+      "none"
+    ],
+    "n_features_used": 6,
+    "feature_selection_method": "none_reported",
+    "top_3_features": [],
+    "mechanistic_discussion": true,
+    "ml_algorithms": [
+      "GPR"
+    ],
+    "n_algorithms_compared": 1,
+    "evaluation_metrics": [
+      "R",
+      "R2",
+      "adjusted_R2",
+      "RMSE",
+      "MAE"
+    ],
+    "software_tools": [
+      "MATLAB"
+    ],
+    "code_available": false,
+    "data_available": true,
+    "compared_with_prior_work": false,
+    "water_type": "both",
+    "discusses_scalability": false,
+    "engineering_validation": false,
+    "cost_analysis": false
+  }
+]
