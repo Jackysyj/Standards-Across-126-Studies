@@ -1,0 +1,85 @@
+{
+  "interpretability_methods_frequency": [
+    [
+      "feature_importance",
+      57
+    ],
+    [
+      "none",
+      41
+    ],
+    [
+      "SHAP",
+      26
+    ],
+    [
+      "sensitivity_analysis",
+      17
+    ],
+    [
+      "PDP",
+      13
+    ],
+    [
+      "Grad-CAM",
+      1
+    ],
+    [
+      "correlation",
+      1
+    ]
+  ],
+  "mechanistic_discussion_rate": 0.619,
+  "water_type_distribution": {
+    "synthetic": 58,
+    "not_applicable": 49,
+    "not_specified": 13,
+    "both": 3,
+    "real_wastewater": 3
+  },
+  "discusses_scalability_rate": 0.4603,
+  "engineering_validation_rate": 0.0635,
+  "cost_analysis_rate": 0.0397,
+  "interpretability_by_year": {
+    "2018": {
+      "has": 2,
+      "total": 2,
+      "rate": 1.0
+    },
+    "2019": {
+      "has": 4,
+      "total": 7,
+      "rate": 0.5714
+    },
+    "2020": {
+      "has": 6,
+      "total": 8,
+      "rate": 0.75
+    },
+    "2021": {
+      "has": 5,
+      "total": 10,
+      "rate": 0.5
+    },
+    "2022": {
+      "has": 17,
+      "total": 23,
+      "rate": 0.7391
+    },
+    "2023": {
+      "has": 19,
+      "total": 33,
+      "rate": 0.5758
+    },
+    "2024": {
+      "has": 21,
+      "total": 31,
+      "rate": 0.6774
+    },
+    "2025": {
+      "has": 10,
+      "total": 12,
+      "rate": 0.8333
+    }
+  }
+}

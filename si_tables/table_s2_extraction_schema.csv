@@ -1,0 +1,45 @@
+Field,Type,Allowed Values,Description,Pillar
+paper_id,integer,,Sequential ID matching the paper's position in targeted_relevant_papers.json (1-indexed),Metadata
+paper_title,string,,Full title of the paper,Metadata
+doi,string/null,,"DOI of the paper (e.g., '10.1021/acs.est.0c02526')",Metadata
+research_type,string,"adsorption, degradation, both",Primary research domain,Metadata
+data_source,string,"literature, experimental, database, mixed","Origin of ML training data. 'literature' = collected from published papers; 'experimental' = authors' own experiments; 'database' = computational/simulation databases (e.g., CoRE MOF, CSD); 'mixed' = combination",1-Data
+dataset_size,integer/null,,"Total number of data points used for ML (training + testing). For RSM/CCD designs, count = number of experimental runs. For literature collection, count = total collected entries. null if not clearly stated.",1-Data
+n_literature_sources,integer/null,,"If data_source is 'literature', how many published papers were cited as data sources. null if not applicable or not stated.",1-Data
+target_variable.name,string,"qmax, removal_efficiency, rate_constant, log_Kd, adsorption_capacity, selectivity, uptake, other",Standardized name of the prediction target,1-Data
+target_variable.name_original,string,,"Original name as used in the paper (e.g., 'maximum adsorption capacity', 'photo-degradation rate constant')",1-Data
+target_variable.unit,string/null,,"Unit of the target variable (mg/g, %, min⁻¹, mmol/g, L/g, etc.)",1-Data
+target_variable.range_min,number/null,,Minimum y-value in the dataset. null if not extractable.,1-Data
+target_variable.range_max,number/null,,Maximum y-value in the dataset. null if not extractable.,1-Data
+pollutants,list,,"List of pollutants/adsorbates studied. Use standardized names where possible (e.g., 'Methylene Blue', 'Congo Red', 'Pb(II)', 'Cd(II)', 'CO2', 'Xe/Kr').",1-Data
+materials,list,,"List of adsorbent/catalyst materials studied. Use standardized names (e.g., 'biochar', 'activated carbon', 'MOF', 'TiO2', 'zeolite').",1-Data
+data_selection_criteria_described,boolean,,"true if the paper explicitly describes how training data was selected, filtered, or quality-controlled",1-Data
+data_preprocessing,list,"normalization, standardization, log_transform, outlier_removal, missing_value_imputation, one_hot_encoding, label_encoding, none_reported",Data preprocessing steps applied before ML training,1-Data
+validation_method,string,"random_split, k_fold, LOOCV, external, nested_cv, none_reported",Primary validation strategy. 'random_split' = single train/test split; 'k_fold' = k-fold cross-validation; 'LOOCV' = leave-one-out CV; 'external' = tested on independent external dataset; 'nested_cv' = nested cross-validation; 'none_reported' = no clear validation described,2-Validation
+k_fold_k,integer/null,,"If validation_method is 'k_fold', the value of k (e.g., 5, 10). null otherwise.",2-Validation
+train_test_ratio,string/null,,"Train:test split ratio as string (e.g., '80:20', '70:30', '70:15:15' for train:val:test). null if not specified.",2-Validation
+grouped_splitting,boolean,,"true if data was split by study/material/pollutant group to prevent data leakage (e.g., GroupKFold, LeaveOneGroupOut)",2-Validation
+best_metric_type,string/null,"R2, R, adjusted_R2, None",Type of the best performance metric reported. CRITICAL: distinguish R² (coefficient of determination) from R (Pearson correlation coefficient). null if neither is reported.,2-Validation
+best_metric_value,number/null,,Value of the best performance metric on the TEST/validation set (not training set). Must correspond to best_metric_type.,2-Validation
+best_rmse,number/null,,Best RMSE on the test/validation set. null if not reported.,2-Validation
+reports_train_and_test,boolean,,true if the paper reports performance metrics for BOTH training and test sets (enables overfitting detection),2-Validation
+external_validation,boolean,,"true if the model was tested on a truly independent/external dataset (different lab, different material class, or independent experimental verification)",2-Validation
+n_features,integer/null,,Total number of input features (X variables) used in the ML model. null if not clearly stated.,3-Comparability
+hyperparameter_tuning,string,"grid_search, random_search, bayesian_optimization, genetic_algorithm, manual, none_reported",Method used for hyperparameter optimization,3-Comparability
+best_algorithm,string/null,,The algorithm the paper recommends as best-performing. Use standardized abbreviation from ml_algorithms enum.,3-Comparability
+interpretability_methods,list,"SHAP, LIME, PDP, ICE, feature_importance, sensitivity_analysis, attention_weights, none","All interpretability/explainability methods used. Can be multiple (e.g., ['SHAP', 'PDP']).",3-Comparability
+n_features_used,integer/null,,Number of features actually input to the final model (after feature selection). May differ from n_features if feature selection was applied.,3-Comparability
+feature_selection_method,string,"correlation_filter, PCA, RFE, mutual_information, variance_threshold, domain_knowledge, none_reported",Feature selection method used before or during model training,3-Comparability
+top_3_features,list,,Top 3 most important features as identified by interpretability analysis. Empty array if not reported.,3-Comparability
+mechanistic_discussion,boolean,,"true if the paper connects ML interpretability results (e.g., SHAP values) to known adsorption/degradation mechanisms with scientific reasoning",4-Reproducibility
+ml_algorithms,list,"RF, XGBoost, LightGBM, CatBoost, GBM, AdaBoost, ANN, DNN, CNN, RNN, LSTM, SVM, SVR, GPR, DT, KNN, LR, Ridge, LASSO, ElasticNet, AutoML, RSM, other",All ML algorithms used in the paper. Use STANDARDIZED abbreviations only.,3-Comparability
+n_algorithms_compared,integer,,Number of distinct ML algorithms compared in the paper,3-Comparability
+evaluation_metrics,list,"R2, RMSE, MAE, MAPE, MSE, R, NSE, AARD, RE, other",All evaluation metrics reported,3-Comparability
+software_tools,list,"Python, MATLAB, R, Weka, SPSS, JMP, other",Software/programming languages used for ML modeling,3-Comparability
+code_available,boolean,,"true if source code or software is publicly shared (GitHub, Zenodo, etc.)",4-Reproducibility
+data_available,boolean,,true if the training dataset is publicly available or shared as supplementary material,4-Reproducibility
+compared_with_prior_work,boolean,,true if the paper compares its model performance with previously published ML models on the same or similar data,4-Reproducibility
+water_type,string,"synthetic, real_wastewater, both, not_specified, not_applicable",Type of water/medium used in experiments. 'not_applicable' for gas-phase or computational studies.,5-Deployment
+discusses_scalability,boolean,,"true if the paper discusses scale-up potential, practical application, or real-world deployment",5-Deployment
+engineering_validation,boolean,,true if ML model predictions are validated with real engineering/pilot-scale data,5-Deployment
+cost_analysis,boolean,,true if economic or cost-benefit analysis is included,5-Deployment

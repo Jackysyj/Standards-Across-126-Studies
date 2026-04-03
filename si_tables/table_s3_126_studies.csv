@@ -1,0 +1,127 @@
+ID,First Author,Year,Journal,Research Type,Pollutant(s),Material(s),Target Variable,Data Source,Dataset Size,Best Algorithm,Best Metric,Validation,Code,Data,DOI
+1,Diego Melchor Polanco Gamboa,2024,International Journal of Molecular Sciences,adsorption,Congo Red,Biochar,removal_efficiency,experimental,105,GBM,0.914,random_split,N,N,10.3390/ijms25094771
+2,Kun Tian,2025,Scientific Reports,adsorption,Methylene Blue; Pb(II); Cd(II) (+2),Biochar; SDMBC,adsorption_capacity,experimental,NR,XGBoost,0.976,random_split,N,Y,10.1038/s41598-025-91229-z
+3,G. V. S. R. Pavan Kumar,2019,Applied Water Science,adsorption,Cu(II),Groundnut seed cake powder; Sesame seed cake powder; Coconut cake powder,removal_efficiency,experimental,NR,ANN,0.989 (R),random_split,N,N,
+5,Muhammad Faisal Javed,2024,Results in Engineering,degradation,organic air pollutants; VOCs,TiO2,rate_constant,literature,200,RF,0.9 (R),k_fold,N,N,
+6,Kai Zhang,2020,Environmental Science & Technology,adsorption,phenol; 2-nitroaniline; 2-nitrophenol (+12),Biochar; CNT; Activated Carbon (+1),log_Kd,literature,4102,ANN,0.910,random_split,Y,Y,10.1021/acs.est.0c02526
+7,Rameez Ahmad Aftab,2023,Alexandria Engineering Journal,adsorption,Congo Red,Activated Carbon,adsorption_capacity,experimental,NR,SVR,0.982,random_split,N,N,
+8,Seyedehmaryam Moosavi,2021,Nanomaterials,adsorption,dyes; Methylene Blue,Activated Carbon; agricultural waste; Biochar,adsorption_capacity,literature,350,RF,0.900,random_split,N,Y,10.3390/nano11102734
+9,Abdul Ahad Khan,2023,Journal of the Taiwan Institute of Chemical Engineers,adsorption,Congo Red,Biochar,removal_efficiency,experimental,64,ANN,0.997,random_split,N,N,10.1016/j.jtice.2023.105312
+10,Zohreh Khoshraftar,2024,Scientific Reports,adsorption,CO2,CNT; Fe-Ni/AC catalyst,adsorption_capacity,experimental,250,ANN,0.999,random_split,N,N,
+12,Miaomiao Zhang,2024,ACS Omega,adsorption,Norfloxacin,Biochar; Activated Carbon,adsorption_capacity,literature,144,RF,0.924,k_fold,N,N,10.1021/acsomega.4c03496
+14,Irvan Dahlan,2022,Water,adsorption,"2,4-Dichlorophenoxyacetic Acid",Hydrogel; Activated Carbon,adsorption_capacity,literature,20,RSM,1.000,random_split,N,N,10.3390/w14193061
+15,Mehdi Bahrami,2023,Sustainability,adsorption,Caffeine,Activated Carbon; rice husk,adsorption_capacity,experimental,31,RF,0.952,random_split,N,Y,
+17,Shen Wang,2025,Water,adsorption,Cd(II),Biochar,adsorption_capacity,literature,598,Stacking,0.918,random_split,N,N,10.3390/w17152266
+18,Ghazala Muteeb,2025,Journal of Science Advanced Materials and Devices,adsorption,Congo Red,Biochar,removal_efficiency,experimental,17,DT,0.910,random_split,N,N,
+23,Heng Liang,2021,ACS Omega,adsorption,Xe; Kr,MOF,selectivity,database,303991,XGBoost,0.973,k_fold,N,Y,10.1021/acsomega.1c00100
+24,Xueying Yuan,2020,Green Energy & Environment,adsorption,Formaldehyde,MOF,uptake,database,29220,RF,0.867 (R),k_fold,N,N,10.1016/j.gee.2020.06.024
+25,Nadia Hamri,2024,Water,adsorption,Methylene Blue,kaolinite; acid-treated kaolinite,adsorption_capacity,experimental,316,GPR,0.985,random_split,N,Y,10.3390/w16020243
+51,Mochen Liao,2019,Biofuels Bioproducts and Biorefining,adsorption,,Activated Carbon; biomass,other,literature,168,ANN,0.940,random_split,N,Y,10.1002/bbb.1991
+52,Kaihang Shi,2023,Journal of Chemical Theory and Computation,adsorption,Kr; Xe; ethane (+4),MOF; Activated Carbon; hyper-cross-linked polymers (+2),uptake,database,36000,MLP,0.990,random_split,Y,Y,10.1021/acs.jctc.2c00798
+54,Zhilong Wang,2021,npj Computational Materials,adsorption,Pb(II); Hg(II); Cd(II),g-C3N4; graphitic carbon nitride,other,database,8400,DNN,0.990,random_split,N,N,10.1038/s41524-021-00494-9
+55,Xiaohan Yu,2021,The Journal of Physical Chemistry C,adsorption,methane; ethane; ethene (+16),MOF,other,database,21195,GBM,0.879,random_split,Y,Y,10.1021/acs.jpcc.1c05266
+56,Habib Ullah,2023,Carbon Research,adsorption,Selenium,Biochar,adsorption_capacity,literature,40,SVR,0.980,random_split,Y,N,10.1007/s44246-023-00061-5
+57,Jinsheng Xiao,2021,Energies,adsorption,CO2; CH4; CO (+1),Activated Carbon,other,database,15,ANN,N/A,random_split,N,N,10.3390/en14092450
+59,Khumbolake Faith Ngulube,2024,Sustainability,degradation,Methylene Blue,Graphene Oxide; ZnO,removal_efficiency,experimental,29,ANN,0.946,random_split,N,Y,10.3390/su16020529
+60,Rodrigo Teixeira Schossler,2024,Scientific Reports,degradation,VOCs; Formaldehyde; Toluene (+7),TiO2,rate_constant,literature,200,CatBoost,0.961,random_split,N,Y,10.1038/s41598-024-62450-z
+61,Huafei Lyu,2024,Journal of Environmental Management,adsorption,Phosphorus; Phosphate,Biochar,adsorption_capacity,literature,1200,CatBoost,0.957,k_fold,N,N,10.1016/j.jenvman.2024.122405
+63,Mozhgan Parsaei,2022,Scientific Reports,adsorption,Pb(II); Cd(II),MOF; LDH,adsorption_capacity,literature,16,ANN,0.999,k_fold,N,N,
+65,Zhuoying Jiang,2022,Catalysts,degradation,2-chlorophenol; nitrobenzene; ciprofloxacin (+6),TiO2,rate_constant,literature,446,CNN,0.897,k_fold,N,N,10.3390/catal12070746
+68,Nihan Kaya,2024,Biomass Conversion and Biorefinery,adsorption,Bromocresol Green,Biochar,removal_efficiency,experimental,179,ANN,0.999,random_split,N,N,
+70,Raouf Hassan,2025,Scientific Reports,adsorption,organic materials,Biochar; polymer resins,log_Kd,literature,1750,XGBoost,0.974,random_split,N,N,
+71,Sang‐Hyun Kim,2024,Materials Today Advances,adsorption,Ammonia,MOF,uptake,database,1394,ANN,0.978,random_split,N,N,10.1016/j.mtadv.2024.100510
+72,Hossein Mashhadimoslem,2023,The Canadian Journal of Chemical Engineering,adsorption,O2; N2,porous carbon; Activated Carbon; carbon molecular sieve,adsorption_capacity,literature,1344,ANN,0.993,random_split,N,N,10.1002/cjce.25060
+73,M. Venkata Ratnam,2022,International Journal of Chemical Engineering,adsorption,Methylene Blue,Graphene Oxide,removal_efficiency,experimental,30,ANN,0.957,random_split,N,Y,
+74,Manohar Ratnam,2022,Bulletin of the Chemical Society of Ethiopia,adsorption,Methyl Orange,Magnesium Oxide Nanoparticles; Activated Carbon; Graphene Oxide,removal_efficiency,experimental,30,ANN,0.993,random_split,N,N,
+75,Matthew P. Rivera,2024,ACS Applied Materials & Interfaces,adsorption,Acetylene; Ethylene; Ethane,MOF,uptake,literature,NR,ANN,0.640,random_split,Y,Y,10.1021/acsami.4c14131
+76,Mansoor Feilizadeh,2023,The Canadian Journal of Chemical Engineering,degradation,Cortisone acetate,TiO2; Persulphate; Peroxymonosulphate,removal_efficiency,experimental,31,ANN,0.979,random_split,N,N,10.1002/cjce.24931
+77,Vorrada Loryuenyong,2025,Case Studies in Chemical and Environmental Engineering,adsorption,CO2,Chitosan; Activated Carbon; epichlorohydrin,uptake,experimental,17,ANN,1.000,random_split,N,N,
+79,Yan-Yu Xie,2025,Langmuir,adsorption,H2S; CO2,MOF,uptake,database,10995,XGBoost,0.930,random_split,N,N,10.1021/acs.langmuir.5c03788
+82,Wuqing Tao,2025,Inorganic Chemistry,adsorption,CO,MOF,uptake,literature,460,XGBoost,0.957,random_split,Y,Y,10.1021/acs.inorgchem.5c00994
+84,Jafar Abdi,2022,Scientific Reports,adsorption,As(V); arsenate,MIL-101(Fe); MIL-88A; MIL-100(Fe) (+9),removal_efficiency,literature,280,LightGBM,0.996,random_split,N,Y,10.1038/s41598-022-20762-y
+86,Xi Cheng,2023,Journal of Membrane Science,adsorption,CO2; CH4,MOF,adsorption_capacity,experimental,1340,ANN,0.982,random_split,N,N,10.1016/j.memsci.2023.121430
+87,Wenqian Ruan,2018,Materials,adsorption,Crystal Violet,Graphene Oxide; bimetallic Fe/Ni nanoparticles,removal_efficiency,experimental,29,ANN,1.000,random_split,N,N,
+88,Wenjing Guo,2022,Nanomaterials,adsorption,Methane; Carbon Dioxide,MOF; COF,adsorption_capacity,database,130000,MLP,0.965,k_fold,N,N,10.3390/nano12193376
+89,Usman M. Ismail,2023,Environmental Technology & Innovation,adsorption,Crystal Violet,ZIF-60,adsorption_capacity,experimental,25,Stacking,0.9873 (R),none_reported,N,N,
+90,Taimur Khan,2020,Molecules,adsorption,Cu(II),rice husk char,removal_efficiency,experimental,46,ANN,0.989,random_split,N,N,
+91,Zhiming Zhang,2023,ACS Sustainable Chemistry & Engineering,adsorption,H2O,MOF,qmax,mixed,344,RF,0.936,random_split,N,Y,10.1021/acssuschemeng.3c01233
+92,Aixin Yu,2021,Water,adsorption,NH4+; Ammonium,Activated Carbon; CB-GAC,removal_efficiency,experimental,29,ANN,0.996,random_split,N,N,10.3390/w13050608
+93,Xuefang Hu,2022,Arabian Journal of Chemistry,adsorption,Hg(II); Ni(II),MOF,adsorption_capacity,literature,18,GBM,0.994,random_split,N,N,
+94,Ramesh Vinayagam,2024,Chemosphere,adsorption,"2,4-Dichlorophenoxyacetic acid",Biochar,adsorption_capacity,experimental,81,ANN,0.993,random_split,N,N,10.1016/j.chemosphere.2024.141130
+95,Samrendra Singh,2023,Journal of Chemical Theory and Computation,adsorption,H2,MOF,uptake,database,12878,CNN,0.910,k_fold,Y,Y,10.1021/acs.jctc.3c00081
+96,Chandrika K.C,2021,Environmental Engineering Research,degradation,Malachite Green,TiO2,removal_efficiency,experimental,15,ANN,0.971,random_split,N,N,
+97,Shichao Zhang,2022,ACS Sustainable Chemistry & Engineering,adsorption,CO2,silica gel; Activated Carbon; macroporous silicone (+2),qmax,experimental,NR,RF,N/A,external,N,N,10.1021/acssuschemeng.2c04492
+98,Rusul Khaleel Ibrahim,2020,Molecules,adsorption,"2,4-dichlorophenol",CNT,adsorption_capacity,experimental,147,ANN,0.999,random_split,N,N,
+99,Hayet Chelghoum,2024,Catalysts,degradation,Quinoline Yellow,ZnO,removal_efficiency,experimental,NR,GPR,0.9999 (R),random_split,N,N,10.3390/catal14110831
+100,Zijun Deng,2024,The Journal of Physical Chemistry C,adsorption,CH4; C2H6; C3H8 (+4),MOF,uptake,database,10140,XGBoost,0.977,random_split,Y,Y,10.1021/acs.jpcc.4c01692
+101,Prosper Eguono Ovuoraye,2023,Journal of Engineering and Applied Science,adsorption,TDS,Activated Carbon; Biochar,other,experimental,625,RF,0.941,random_split,N,N,
+102,Zhilu Liu,2023,Journal of Materials Chemistry A,adsorption,H2O,MOF; COF; Zeolite,uptake,literature,3404,RF,0.982,k_fold,N,N,
+103,Asmaa I. Meky,2025,Scientific Reports,degradation,Ciprofloxacin,ZnO,removal_efficiency,experimental,152,ANN,0.978,random_split,N,N,10.1038/s41598-024-84568-w
+104,Adel Al‐Gheethi,2022,Water,adsorption,Cephalexin,Acidic pretreated jackfruit peel adsorbent; Jackfruit peel,removal_efficiency,experimental,21,ANN,0.944,random_split,N,N,10.3390/w14142243
+105,Seyed Reza Nabavi,2024,Processes,degradation,Acid Red 88,Fe3O4,removal_efficiency,experimental,78,ANN,0.980,random_split,N,N,10.3390/pr12030515
+106,Georg Klepp,2023,JOM,adsorption,Methane; Hydrogen; Carbon Dioxide (+2),Activated Carbon,uptake,database,2915,GPR,1.000,k_fold,N,N,
+108,Aysan Rahimpour-Javid,2020,Journal of Water Chemistry and Technology,degradation,Diclofenac,TiO2; glass beads,removal_efficiency,experimental,NR,ANN,0.996,random_split,N,N,10.3103/S1063455X20040128
+111,Antonios P. Sarikas,2023,Sustainable Chemistry for the Environment,adsorption,H2,MOF,uptake,database,98695,ERT,0.997,random_split,N,Y,
+112,Robab Mohammadi,2019,Asian Journal of Green Chemistry,degradation,Methylene Blue,TiO2,removal_efficiency,experimental,NR,ANN,0.979,random_split,N,N,10.33945/SAMI/AJGC.2019.4.2
+114,Aydin Larestani,2025,Scientific Reports,adsorption,Methane,MOF,uptake,literature,2590,XGBoost,0.994,k_fold,N,Y,10.1038/s41598-025-17028-8
+115,Tianxiang Wu,2022,Chinese Science Bulletin (Chinese Version),adsorption,CH4,MOF,uptake,literature,2590,XGBoost,0.996,k_fold,N,Y,10.1038/s41598-025-17028-8
+117,A. Gnanaprakasam,2024,Journal of Environmental Science and Health Part A,degradation,organic dyes,BiVO4,removal_efficiency,literature,1979,XGBoost,0.829,k_fold,N,N,10.1080/10934529.2024.2319510
+120,Saiwei Ge,2025,Journal of Chemical Information and Modeling,adsorption,O3,MOF,uptake,database,2116,RF,0.852,k_fold,Y,Y,10.1021/acs.jcim.5c02152
+121,Amin Mojiri,2019,Water,adsorption,Diclofenac; Ibuprofen; Naproxen,Chitosan; Biochar,removal_efficiency,experimental,50,ANN,0.999,random_split,N,Y,
+122,Hongjian Tang,2021,ACS Applied Materials & Interfaces,adsorption,Propane; Propylene,MOF,adsorption_capacity,database,1726,RF,0.930,random_split,N,Y,10.1021/acsami.1c13786
+124,Neda Halalsheh,2022,Water,adsorption,Selenite,Zeolite; iron oxide,other,experimental,NR,CatBoost,0.996,k_fold,N,N,10.3390/w14162519
+126,Hong Liang,2019,APL Materials,adsorption,Methanethiol; Ethanethiol,MOF,adsorption_capacity,database,142717,ANN,0.87 (R),k_fold,N,N,10.1063/1.5100765
+127,Mohammed Al‐Yaari,2022,Applied Sciences,adsorption,As(III),various adsorbents/biosorbents,removal_efficiency,literature,NR,ANFIS,0.933,random_split,N,N,10.3390/app12030999
+128,Xiaoqiang Li,2023,Carbon Capture Science & Technology,adsorption,CO2,MOF,uptake,literature,348,RF,0.896,random_split,N,Y,10.1016/j.ccst.2023.100146
+129,Bahareh Beigzadeh,2020,Water Science & Technology,adsorption,"2,4-D; 2,4-dichlorophenoxy acetic acid",Biochar,adsorption_capacity,experimental,45,RF,0.994,random_split,N,N,
+130,Mohd. Zafar,2022,Processes,adsorption,Cr(VI),maghemite nanoparticles,removal_efficiency,experimental,18,ANN,0.97 (R),random_split,N,N,10.3390/pr10030447
+131,Abayomi Bamisaye,2023,Biomass Conversion and Biorefinery,adsorption,Pb(II),Chitosan; walnut shell,removal_efficiency,experimental,NR,ANFIS,0.997,random_split,N,N,
+132,Kaushal Naresh Gupta,2020,Environmental Engineering Research,adsorption,Xylene,Activated Carbon,other,experimental,96,ANN,0.999,random_split,N,N,
+133,Hakan Demir,2023,Chemical Engineering Journal,adsorption,C2H2; CH4; CO2,MOF,uptake,database,534,,0.951,k_fold,N,N,10.1016/j.cej.2023.142731
+134,Manar Ahmed Hamza,2022,Adsorption Science & Technology,adsorption,Tetracycline; Sulfamethoxazole,Biochar; Activated Carbon; waste feed (+2),adsorption_capacity,literature,151,GPR,N/A,k_fold,N,N,
+135,Xiaohua Liu,2023,The Journal of Physical Chemistry C,adsorption,Toluene,MOF; HKUST-1; UiO-66 (+1),uptake,database,2500,CNN,0.986,random_split,Y,Y,10.1021/acs.jpcc.3c01749
+136,I-Ting Sung,2023,The Journal of Physical Chemistry C,adsorption,CO2; CO,MOF,selectivity,database,6000,RF,0.88 (R),random_split,N,N,10.1021/acs.jpcc.3c02452
+137,Yukun Teng,2024,APL Materials,adsorption,CO2,MOF,uptake,database,100240,XGBoost,0.949,random_split,N,N,10.1063/5.0222154
+138,Huilin Li,2022,Membranes,adsorption,CH4; H2,MOF,selectivity,database,6013,RF,0.99 (R),random_split,N,N,10.3390/membranes12090830
+139,Tao Bai,2024,Separations,adsorption,Pb(II),hydrothermal carbon; banana peel,adsorption_capacity,experimental,NR,ANN,0.990,random_split,N,N,10.3390/separations11010017
+140,Sengul Tugba Ozeken,2023,AQUA - Water Infrastructure Ecosystems and Society,adsorption,Cr(VI); Cu(II),moss; Racomitrium ericoides,removal_efficiency,experimental,25,ANN,0.994,random_split,N,Y,
+141,Xiaohan Yu,2023,The Journal of Physical Chemistry C,adsorption,Propane; Propene; 1-methyl-3-buten-1-ol (+2),MOF,uptake,database,63062,XGBoost,0.973,random_split,Y,Y,10.1021/acs.jpcc.3c04533
+142,Shubham Yadav,2025,Carbon Research,adsorption,Congo Red,Biochar,adsorption_capacity,literature,NR,RF,0.979,k_fold,N,N,10.1007/s44246-024-00168-3
+143,Wenyun Wang,2021,Polish Journal of Environmental Studies,adsorption,Methylene Blue,Biochar,removal_efficiency,experimental,29,ANN,0.999,none_reported,N,N,
+144,Yanan Zhao,2022,Process Safety and Environmental Protection,adsorption,,carbon; COF; MOF (+2),other,literature,776,GPR,0.980,random_split,N,Y,10.1016/j.psep.2022.09.046
+145,Óscar Barros,2023,Molecules,adsorption,La; Ce; Y (+3),Zeolite; FAU; Z13X,removal_efficiency,experimental,16,,N/A,random_split,N,N,10.3390/molecules28247964
+146,Yafang Guan,2024,Nanomaterials,adsorption,H2; N2; O2 (+3),MOF,selectivity,database,42092,LightGBM,0.954,k_fold,N,Y,10.3390/nano14131074
+147,Hakan Demir,2024,Industrial & Engineering Chemistry Research,adsorption,CF4; CH4; N2,MOF,uptake,database,498,AutoML,0.980,k_fold,N,N,10.1021/acs.iecr.4c01222
+148,Chengzhi Cai,2023,Giant,adsorption,Propylene; Propane; Methylacetylene (+1),MOF,selectivity,database,NR,RF,0.87 (R),k_fold,N,N,10.1016/j.giant.2023.100223
+150,Zafira Madzin,2024,Advanced Sustainable Systems,adsorption,Pb(II); Cu(II); Fe(II) (+1),Biochar; spent mushroom compost; soil,adsorption_capacity,experimental,749,ANFIS,0.999,random_split,N,N,
+152,Feiwu Chen,2023,Sustainability,both,Ammonium Nitrogen; Nitrate Nitrogen,Biochar; soil; mineral filler,removal_efficiency,literature,120,ANN,0.9199 (R),random_split,N,N,
+153,Mingzheng Zhang,2024,The Journal of Physical Chemistry Letters,adsorption,C2H4; C2H6,MOF; organic linkers,adsorption_capacity,database,15361,GBM,0.990,random_split,Y,N,10.1021/acs.jpclett.4c00860
+156,V. Senthilkumar V. Senthilkumar,2023,Oriental Journal Of Chemistry,adsorption,Phenylic acid,Activated Carbon,removal_efficiency,experimental,17,ANN,1.000,none_reported,N,N,10.13005/ojc/390121
+158,I. R. Ilaboya,2019,Journal of environment and earth science,adsorption,Mn(II),Activated Carbon,removal_efficiency,experimental,90,ANN,0.989,random_split,N,N,10.7176/JEES/9-10-15
+165,Mohammad Hadi Dehghani,2021,Scientific Reports,adsorption,Diazinon,Pumice,removal_efficiency,experimental,30,ANN,0.976,random_split,N,N,10.1038/s41598-021-91178-3
+166,Tianxing Da,2022,Journal of environmental chemical engineering,adsorption,U(VI),Biochar,adsorption_capacity,literature,777,ANN,0.990,k_fold,N,Y,10.1016/j.jece.2022.108449
+167,Farnoush Fathalian,2022,Scientific Reports,adsorption,CO2,Graphene Oxide; porous carbon; MOF,adsorption_capacity,literature,749,ANN,0.994,random_split,N,N,10.1038/s41598-022-26138-6
+168,Ying Zhao,2022,Environmental Research,adsorption,organic compounds,Biochar; polymer resin,log_Kd,literature,1750,GPR,0.976,k_fold,N,Y,10.1016/j.envres.2022.112694
+170,Haoyang Fu,2023,ACS Nano,degradation,Phenol,Single-atom catalysts; Fe-N-C; Graphene Oxide,rate_constant,experimental,144,XGBoost,0.870,k_fold,N,N,10.1021/acsnano.3c03610
+172,Hung Vo Thanh,2023,Energies,adsorption,Hydrogen,Biochar; Activated Carbon; metal-doped carbon,uptake,literature,566,RF,0.930,random_split,N,Y,10.3390/en16052348
+175,Pin Chen,2022,Journal of Chemical Information and Modeling,adsorption,N2; CO2; CH4,MOF,uptake,mixed,22840,MOFNet,N/A,k_fold,Y,Y,10.1021/acs.jcim.2c00876
+176,Bingyou Liu,2024,Bioresource Technology,both,Emerging Contaminants (ECs); PPCPs; EDCs,Biochar,qmax,literature,420,AdaBoost,0.874,random_split,N,N,10.1016/j.biortech.2024.130776
+177,Muhammad Yaqub,2020,Environmental Engineering Research,adsorption,As(V),Polyacrylonitrile membrane; Cetylpyridinium chloride (CPC),removal_efficiency,experimental,96,ANN,0.932,random_split,N,N,
+178,Chong Liu,2025,npj Clean Water,adsorption,Ammonia nitrogen,Biochar,adsorption_capacity,literature,417,CatBoost,0.933,k_fold,Y,Y,10.1038/s41545-024-00429-z
+179,Christiano Bruneli Peres,2024,Journal of CO2 Utilization,adsorption,CO2,passion fruit peel; Activated Carbon,uptake,literature,172,LR,0.610,k_fold,Y,Y,10.1016/j.jcou.2024.102680
+181,Priyanshu Rajput,2024,Journal of Water Process Engineering,adsorption,Methylene Blue,Biochar,qmax,literature,199,RF,0.942,k_fold,N,N,10.1016/j.jwpe.2024.106749
+182,Alok Garg,2019,Environmental Engineering Research,degradation,Acid Red 114,TiO2,removal_efficiency,experimental,168,ANN,0.998,random_split,N,N,
+183,Ayman Massaoudi,2024,Applied Organometallic Chemistry,adsorption,Fe(III),Activated Carbon,removal_efficiency,literature,45,ANN,1.000,random_split,N,N,10.1002/aoc.7384
+185,Gautam Aditya,2018,Applied Water Science,adsorption,Cadmium,Bellamya shell dust,adsorption_capacity,experimental,69,ANN,0.943,random_split,N,N,
+186,Zening Qu,2024,Toxics,adsorption,U(VI),Biochar,adsorption_capacity,literature,777,ANN,0.901,random_split,N,N,
+188,Raid Alrowais,2023,Sustainability,adsorption,"2,4-D; MCPA",Activated Carbon,adsorption_capacity,experimental,NR,ANN,0.960,random_split,N,Y,
+189,Nesma A. Fekry,2024,Chemical Engineering Journal,adsorption,Cr(VI); Hg(II),Biochar; copolymer,adsorption_capacity,experimental,NR,SVR,0.9989 (R),k_fold,N,N,10.1016/j.cej.2024.158322
+190,Lulu Zhang,2023,ACS ES&T Engineering,adsorption,Methanol; Ethanol,MOF,other,database,31399,AutoML,0.958,random_split,N,N,10.1021/acsestengg.2c00424
+193,Ruiqing Chen,2022,Journal of Cleaner Production,adsorption,Ammonia; Water,Activated Carbon,adsorption_capacity,experimental,NR,LSTM,1.000,none_reported,N,N,
+194,Etinosa Osaro,2024,AIChE Journal,adsorption,CH4; CO2,MOF; Cu-BTC,uptake,database,8671,GPR,0.990,none_reported,Y,Y,10.1002/aic.18611
+195,Mohamed K. Mostafa,2022,Adsorption Science & Technology,adsorption,Organic matter (BOD),CA/nZVI; Nanozero-valent iron; Cellulose acetate,removal_efficiency,experimental,25,ANN,0.972,random_split,N,Y,
+196,Harsha S. Rangappa,2024,Sustainability,adsorption,Tetracycline,blast furnace slag; oxalic acid modified blast furnace slag,removal_efficiency,experimental,17,RSM,0.980,random_split,N,N,10.3390/su16010464
+197,Saerom Park,2024,Chemosphere,adsorption,,Activated Carbon,adsorption_capacity,literature,498,XGBoost,0.967,random_split,N,N,10.1016/j.chemosphere.2024.143495
+198,Jiatong Liang,2023,Environmental Science and Pollution Research,adsorption,Pb(II),Biochar,qmax,literature,130,RF,0.910,k_fold,N,N,10.1007/s11356-023-30864-3
+199,Mengqing Jiao,2023,Molecules,adsorption,Cu(II),modified pomelo peels,adsorption_capacity,experimental,100,ANN,1.000,random_split,N,Y,10.3390/molecules28196957
+200,Hyeonmin Lee,2023,Chemosphere,adsorption,PAHs; PCBs,Activated Carbon; sediment,log_Kd,literature,186,SVR,0.940,random_split,N,N,10.1016/j.chemosphere.2023.141003

@@ -1,0 +1,43 @@
+Field,Type,Claude Sonnet 4.6,Qwen3.5-Plus,Gemini 3.1 Pro,GPT-5.1
+research_type,categorical,100.0%,100.0%,100.0%,100.0%
+data_source,categorical,100.0%,90.0%,90.0%,100.0%
+validation_method,categorical,90.0%,70.0%,70.0%,70.0%
+best_metric_type,categorical,100.0%,100.0%,100.0%,100.0%
+best_algorithm,categorical,90.0%,80.0%,80.0%,90.0%
+water_type,categorical,70.0%,70.0%,70.0%,70.0%
+hyperparameter_tuning,categorical,80.0%,70.0%,80.0%,60.0%
+feature_selection_method,categorical,70.0%,30.0%,40.0%,50.0%
+data_selection_criteria_described,boolean,80.0%,80.0%,80.0%,80.0%
+grouped_splitting,boolean,100.0%,100.0%,100.0%,100.0%
+reports_train_and_test,boolean,100.0%,90.0%,90.0%,90.0%
+external_validation,boolean,100.0%,100.0%,100.0%,100.0%
+mechanistic_discussion,boolean,80.0%,90.0%,70.0%,70.0%
+code_available,boolean,100.0%,100.0%,100.0%,100.0%
+data_available,boolean,90.0%,80.0%,90.0%,60.0%
+compared_with_prior_work,boolean,90.0%,90.0%,90.0%,80.0%
+discusses_scalability,boolean,90.0%,60.0%,70.0%,90.0%
+engineering_validation,boolean,90.0%,80.0%,100.0%,100.0%
+cost_analysis,boolean,100.0%,100.0%,100.0%,100.0%
+best_metric_value,numeric,MRE 0.00,MRE 0.00,MRE 0.02,MRE 0.01
+best_rmse,numeric,MRE 0.00,MRE 0.03,MRE 0.21,MRE 0.02
+n_features,numeric,MRE 0.00,MRE 0.00,MRE 0.00,MRE 0.00
+n_features_used,numeric,MRE 0.00,MRE 0.03,MRE 0.03,MRE 0.00
+n_algorithms_compared,numeric,MRE 0.07,MRE 0.15,MRE 0.30,MRE 0.28
+ml_algorithms,list,0.867,0.848,0.862,0.850
+evaluation_metrics,list,0.961,0.939,0.926,0.907
+interpretability_methods,list,0.913,0.900,0.900,0.652
+software_tools,list,0.900,0.717,0.700,0.617
+data_preprocessing,list,0.750,0.700,0.783,0.617
+pollutants,list,0.454,0.532,0.507,0.560
+materials,list,0.467,0.417,0.325,0.345
+target_variable.name,categorical,80.0%,80.0%,70.0%,50.0%
+dataset_size,numeric,MRE 0.00,MRE 0.00,MRE 0.00,MRE 0.00
+n_literature_sources,numeric,MRE 0.08,MRE 0.00,MRE 0.00,MRE 0.05
+Overall Score,—,88.4,83.4,82.7,81.1
+Time (sec/paper),—,20.0,57.3,48.6,6.2
+Cost (USD/paper),—,0.0801,0.0020,0.0309,0.1134
+Hallucination Rate,—,0.0%,10.0%,10.0%,0.0%
+Schema Compliance,—,96.7%,97.0%,97.0%,96.7%
+Field Completeness,—,99.4%,99.4%,98.8%,98.1%
+API Success Rate,—,100.0%,100.0%,100.0%,100.0%
+Cross-Model Agreement,—,82.4%,82.4%,82.4%,82.4%

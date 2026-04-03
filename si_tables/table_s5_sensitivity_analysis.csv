@@ -1,0 +1,10 @@
+Excluded Dimension,Remaining Spearman rho,p-value
+Grouped splitting,-0.445,<0.001
+External validation,-0.459,<0.001
+Train+test reported,-0.464,<0.001
+HPO reported,-0.429,<0.001
+Selection criteria,-0.373,<0.001
+Code available,-0.461,<0.001
+Data available,-0.457,<0.001
+Dataset >= 500,-0.474,<0.001
+k-fold or better,-0.431,<0.001

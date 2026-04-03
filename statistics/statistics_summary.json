@@ -1,0 +1,1410 @@
+{
+  "meta": {
+    "n_papers": 126,
+    "excluded_ids": [
+      66,
+      81,
+      119
+    ],
+    "generated_at": "2026-02-26T17:44:38.777604",
+    "data_source": "ml4env_126_dataset.json"
+  },
+  "introduction": {
+    "n_papers": 126,
+    "year_distribution": {
+      "2018": 2,
+      "2019": 7,
+      "2020": 8,
+      "2021": 10,
+      "2022": 23,
+      "2023": 33,
+      "2024": 31,
+      "2025": 12
+    },
+    "total_journals": 78,
+    "top_10_journals": [
+      [
+        "Scientific Reports",
+        10
+      ],
+      [
+        "Water",
+        7
+      ],
+      [
+        "Sustainability",
+        5
+      ],
+      [
+        "The Journal of Physical Chemistry C",
+        5
+      ],
+      [
+        "Molecules",
+        4
+      ],
+      [
+        "Environmental Engineering Research",
+        4
+      ],
+      [
+        "Nanomaterials",
+        3
+      ],
+      [
+        "Chemosphere",
+        3
+      ],
+      [
+        "Applied Water Science",
+        2
+      ],
+      [
+        "ACS Omega",
+        2
+      ]
+    ],
+    "research_type_distribution": {
+      "adsorption": 110,
+      "degradation": 14,
+      "both": 2
+    },
+    "adsorption_count": 110,
+    "degradation_count": 14,
+    "both_count": 2,
+    "oa_count": 95,
+    "oa_rate": 0.754,
+    "citation_stats": {
+      "n": 126,
+      "min": 0,
+      "q25": 7.0,
+      "median": 16.0,
+      "q75": 31.5,
+      "max": 194,
+      "mean": 24.77
+    }
+  },
+  "pillar1_data_bias": {
+    "data_source_distribution": {
+      "experimental": 55,
+      "literature": 41,
+      "database": 28,
+      "mixed": 2
+    },
+    "dataset_size_stats": {
+      "n": 109,
+      "min": 15,
+      "q25": 46.0,
+      "median": 280.0,
+      "q75": 1979.0,
+      "max": 303991,
+      "mean": 10526.62
+    },
+    "dataset_size_n_null": 17,
+    "dataset_size_pct_under_100": 0.3303,
+    "dataset_size_pct_under_500": 0.5963,
+    "dataset_size_by_source": {
+      "experimental": {
+        "n": 42,
+        "min": 15,
+        "q25": 26.0,
+        "median": 45.5,
+        "q75": 103.75,
+        "max": 1340,
+        "mean": 130.26
+      },
+      "literature": {
+        "n": 38,
+        "min": 16,
+        "q25": 169.0,
+        "median": 418.5,
+        "q75": 777.0,
+        "max": 4102,
+        "mean": 788.95
+      },
+      "database": {
+        "n": 27,
+        "min": 15,
+        "q25": 2707.5,
+        "median": 10995.0,
+        "q75": 39046.0,
+        "max": 303991,
+        "mean": 40324.7
+      },
+      "mixed": {
+        "n": 2,
+        "min": 344,
+        "q25": 5968.0,
+        "median": 11592.0,
+        "q75": 17216.0,
+        "max": 22840,
+        "mean": 11592.0
+      }
+    },
+    "top_15_pollutants": [
+      [
+        "CO2",
+        17
+      ],
+      [
+        "CH4",
+        10
+      ],
+      [
+        "Methylene Blue",
+        8
+      ],
+      [
+        "Pb(II)",
+        7
+      ],
+      [
+        "N2",
+        6
+      ],
+      [
+        "Congo Red",
+        5
+      ],
+      [
+        "Cu(II)",
+        5
+      ],
+      [
+        "Cd(II)",
+        4
+      ],
+      [
+        "H2",
+        4
+      ],
+      [
+        "Xe",
+        3
+      ],
+      [
+        "Kr",
+        3
+      ],
+      [
+        "Hg(II)",
+        3
+      ],
+      [
+        "CO",
+        3
+      ],
+      [
+        "Methane",
+        3
+      ],
+      [
+        "Propane",
+        3
+      ]
+    ],
+    "top_15_materials": [
+      [
+        "MOF",
+        39
+      ],
+      [
+        "Biochar",
+        30
+      ],
+      [
+        "Activated Carbon",
+        27
+      ],
+      [
+        "TiO2",
+        8
+      ],
+      [
+        "Graphene Oxide",
+        7
+      ],
+      [
+        "CNT",
+        4
+      ],
+      [
+        "Zeolite",
+        4
+      ],
+      [
+        "ZnO",
+        3
+      ],
+      [
+        "Chitosan",
+        3
+      ],
+      [
+        "COF",
+        3
+      ],
+      [
+        "porous carbon",
+        2
+      ],
+      [
+        "UiO-66",
+        2
+      ],
+      [
+        "soil",
+        2
+      ],
+      [
+        "SDMBC",
+        1
+      ],
+      [
+        "Groundnut seed cake powder",
+        1
+      ]
+    ],
+    "total_unique_pollutants": 162,
+    "total_unique_materials": 96,
+    "data_selection_criteria_described_count": 45,
+    "data_selection_criteria_described_rate": 0.3571,
+    "data_preprocessing_distribution": {
+      "none_reported": 56,
+      "normalization": 39,
+      "standardization": 18,
+      "outlier_removal": 11,
+      "log_transform": 10,
+      "missing_value_imputation": 9,
+      "one_hot_encoding": 4,
+      "correlation": 3,
+      "label_encoding": 2,
+      "PCA": 1,
+      "feature_selection": 1
+    },
+    "target_variable_distribution": {
+      "removal_efficiency": 37,
+      "adsorption_capacity": 37,
+      "uptake": 25,
+      "other": 9,
+      "selectivity": 5,
+      "qmax": 5,
+      "rate_constant": 4,
+      "log_Kd": 4
+    }
+  },
+  "pillar2_validation": {
+    "validation_method_distribution": {
+      "random_split": 88,
+      "k_fold": 32,
+      "none_reported": 5,
+      "external": 1
+    },
+    "grouped_splitting_count": 4,
+    "grouped_splitting_rate": 0.0317,
+    "external_validation_count": 16,
+    "external_validation_rate": 0.127,
+    "reports_train_and_test_count": 75,
+    "reports_train_and_test_rate": 0.5952,
+    "best_metric_type_counts": {
+      "R2": 109,
+      "R": 12,
+      "adjusted_R2": 0,
+      "null": 5
+    },
+    "r2_stats": {
+      "n": 109,
+      "min": 0.61,
+      "q25": 0.9411,
+      "median": 0.978,
+      "q75": 0.994,
+      "max": 1.0,
+      "mean": 0.96
+    },
+    "r2_above_090": 0.9174,
+    "r2_above_095": 0.6972,
+    "r2_above_099": 0.3578,
+    "r_stats": {
+      "n": 12,
+      "min": 0.867,
+      "q25": 0.8775,
+      "median": 0.94495,
+      "q75": 0.98925,
+      "max": 0.9999,
+      "mean": 0.94
+    },
+    "hyperparameter_tuning_distribution": {
+      "none_reported": 74,
+      "grid_search": 29,
+      "bayesian": 12,
+      "genetic": 9,
+      "random_search": 2
+    },
+    "n_features_stats": {
+      "n": 119,
+      "min": 1,
+      "q25": 4.0,
+      "median": 5.0,
+      "q75": 9.0,
+      "max": 793,
+      "mean": 19.13
+    },
+    "dataset_size_vs_r2_scatter": [
+      [
+        105,
+        0.914
+      ],
+      [
+        4102,
+        0.91
+      ],
+      [
+        350,
+        0.9
+      ],
+      [
+        64,
+        0.9973
+      ],
+      [
+        250,
+        0.99904
+      ],
+      [
+        144,
+        0.9238
+      ],
+      [
+        20,
+        0.9998
+      ],
+      [
+        31,
+        0.9517
+      ],
+      [
+        598,
+        0.918
+      ],
+      [
+        17,
+        0.91
+      ],
+      [
+        303991,
+        0.973
+      ],
+      [
+        316,
+        0.9851
+      ],
+      [
+        168,
+        0.94
+      ],
+      [
+        36000,
+        0.99
+      ],
+      [
+        8400,
+        0.99
+      ],
+      [
+        21195,
+        0.879
+      ],
+      [
+        40,
+        0.98
+      ],
+      [
+        29,
+        0.946
+      ],
+      [
+        200,
+        0.961
+      ],
+      [
+        1200,
+        0.9573
+      ],
+      [
+        16,
+        0.9989469
+      ],
+      [
+        446,
+        0.897
+      ],
+      [
+        179,
+        0.999
+      ],
+      [
+        1750,
+        0.974
+      ],
+      [
+        1394,
+        0.978
+      ],
+      [
+        1344,
+        0.9934
+      ],
+      [
+        30,
+        0.9572
+      ],
+      [
+        30,
+        0.9926
+      ],
+      [
+        31,
+        0.979
+      ],
+      [
+        17,
+        0.9995
+      ],
+      [
+        10995,
+        0.93
+      ],
+      [
+        460,
+        0.9574
+      ],
+      [
+        280,
+        0.9958
+      ],
+      [
+        1340,
+        0.9822
+      ],
+      [
+        29,
+        0.9998
+      ],
+      [
+        130000,
+        0.9652
+      ],
+      [
+        46,
+        0.989
+      ],
+      [
+        344,
+        0.936
+      ],
+      [
+        29,
+        0.9959
+      ],
+      [
+        18,
+        0.994
+      ],
+      [
+        81,
+        0.9928
+      ],
+      [
+        12878,
+        0.91
+      ],
+      [
+        15,
+        0.97073
+      ],
+      [
+        147,
+        0.9993
+      ],
+      [
+        10140,
+        0.977
+      ],
+      [
+        625,
+        0.9411
+      ],
+      [
+        3404,
+        0.982
+      ],
+      [
+        152,
+        0.978
+      ],
+      [
+        21,
+        0.9435
+      ],
+      [
+        78,
+        0.98
+      ],
+      [
+        2915,
+        1.0
+      ],
+      [
+        98695,
+        0.997
+      ],
+      [
+        2590,
+        0.9943
+      ],
+      [
+        2590,
+        0.9955
+      ],
+      [
+        1979,
+        0.8289
+      ],
+      [
+        2116,
+        0.852
+      ],
+      [
+        50,
+        0.999
+      ],
+      [
+        1726,
+        0.93
+      ],
+      [
+        348,
+        0.896
+      ],
+      [
+        45,
+        0.994
+      ],
+      [
+        96,
+        0.99907
+      ],
+      [
+        534,
+        0.951
+      ],
+      [
+        2500,
+        0.986
+      ],
+      [
+        100240,
+        0.949
+      ],
+      [
+        25,
+        0.994
+      ],
+      [
+        63062,
+        0.973
+      ],
+      [
+        29,
+        0.9985
+      ],
+      [
+        776,
+        0.98
+      ],
+      [
+        42092,
+        0.954
+      ],
+      [
+        498,
+        0.98
+      ],
+      [
+        749,
+        0.9992
+      ],
+      [
+        15361,
+        0.99
+      ],
+      [
+        17,
+        0.9999
+      ],
+      [
+        90,
+        0.9893
+      ],
+      [
+        30,
+        0.976
+      ],
+      [
+        777,
+        0.99
+      ],
+      [
+        749,
+        0.9943
+      ],
+      [
+        1750,
+        0.976
+      ],
+      [
+        144,
+        0.87
+      ],
+      [
+        566,
+        0.93
+      ],
+      [
+        420,
+        0.874
+      ],
+      [
+        96,
+        0.932
+      ],
+      [
+        417,
+        0.9329
+      ],
+      [
+        172,
+        0.61
+      ],
+      [
+        199,
+        0.9415
+      ],
+      [
+        168,
+        0.9983
+      ],
+      [
+        45,
+        0.99967
+      ],
+      [
+        69,
+        0.943
+      ],
+      [
+        777,
+        0.90125
+      ],
+      [
+        31399,
+        0.958
+      ],
+      [
+        8671,
+        0.99
+      ],
+      [
+        25,
+        0.972
+      ],
+      [
+        17,
+        0.98
+      ],
+      [
+        498,
+        0.9668
+      ],
+      [
+        130,
+        0.91
+      ],
+      [
+        100,
+        0.99999
+      ],
+      [
+        186,
+        0.94
+      ]
+    ],
+    "train_test_ratio_distribution": {
+      "80:20": 34,
+      "70:15:15": 23,
+      "70:30": 13,
+      "90:10": 4,
+      "64:16:20": 3,
+      "85:15": 3,
+      "30:70": 2,
+      "60:20:20": 2,
+      "75:25": 2,
+      "80:10:10": 2,
+      "50:50": 1,
+      "85.7:14.3": 1,
+      "11:5": 1,
+      "70:20:10": 1,
+      "19:6:6": 1,
+      "55:14:14:17": 1,
+      "83:17": 1,
+      "60:40": 1,
+      "50:25:25": 1,
+      "76:10:10": 1,
+      "82:18": 1,
+      "60:25:15": 1,
+      "75:15:10": 1,
+      "145:23": 1
+    },
+    "k_fold_k_distribution": {
+      "5": 26,
+      "10": 11,
+      "3": 3
+    }
+  },
+  "pillar3_comparability": {
+    "algorithm_frequency": [
+      [
+        "ANN",
+        78
+      ],
+      [
+        "RF",
+        49
+      ],
+      [
+        "XGBoost",
+        29
+      ],
+      [
+        "GBM",
+        25
+      ],
+      [
+        "RSM",
+        19
+      ],
+      [
+        "DT",
+        18
+      ],
+      [
+        "SVR",
+        16
+      ],
+      [
+        "LR",
+        16
+      ],
+      [
+        "SVM",
+        11
+      ],
+      [
+        "LightGBM",
+        11
+      ],
+      [
+        "GPR",
+        10
+      ],
+      [
+        "CatBoost",
+        9
+      ],
+      [
+        "CNN",
+        7
+      ],
+      [
+        "AdaBoost",
+        7
+      ],
+      [
+        "Ridge",
+        7
+      ],
+      [
+        "LASSO",
+        6
+      ],
+      [
+        "KNN",
+        5
+      ],
+      [
+        "ANFIS",
+        5
+      ],
+      [
+        "ElasticNet",
+        4
+      ],
+      [
+        "AutoML",
+        4
+      ],
+      [
+        "ET",
+        4
+      ],
+      [
+        "LSTM",
+        4
+      ],
+      [
+        "Bayesian",
+        3
+      ],
+      [
+        "DNN",
+        2
+      ],
+      [
+        "Stacking",
+        2
+      ],
+      [
+        "Bagging",
+        1
+      ],
+      [
+        "ELM",
+        1
+      ],
+      [
+        "KRR",
+        1
+      ],
+      [
+        "ERT",
+        1
+      ],
+      [
+        "GBT",
+        1
+      ]
+    ],
+    "top_10_algorithms": [
+      [
+        "ANN",
+        78
+      ],
+      [
+        "RF",
+        49
+      ],
+      [
+        "XGBoost",
+        29
+      ],
+      [
+        "GBM",
+        25
+      ],
+      [
+        "RSM",
+        19
+      ],
+      [
+        "DT",
+        18
+      ],
+      [
+        "SVR",
+        16
+      ],
+      [
+        "LR",
+        16
+      ],
+      [
+        "SVM",
+        11
+      ],
+      [
+        "LightGBM",
+        11
+      ]
+    ],
+    "total_unique_algorithms": 30,
+    "best_algorithm_frequency": [
+      [
+        "ANN",
+        49
+      ],
+      [
+        "RF",
+        20
+      ],
+      [
+        "XGBoost",
+        13
+      ],
+      [
+        "GPR",
+        7
+      ],
+      [
+        "GBM",
+        4
+      ],
+      [
+        "SVR",
+        4
+      ],
+      [
+        "CatBoost",
+        4
+      ],
+      [
+        "CNN",
+        3
+      ],
+      [
+        "ANFIS",
+        3
+      ],
+      [
+        "RSM",
+        2
+      ]
+    ],
+    "n_algorithms_compared_stats": {
+      "n": 126,
+      "min": 1,
+      "q25": 1.0,
+      "median": 2.0,
+      "q75": 4.0,
+      "max": 15,
+      "mean": 3.02
+    },
+    "n_algorithms_compared_distribution": {
+      "1": 38,
+      "2": 33,
+      "4": 20,
+      "3": 13,
+      "5": 6,
+      "6": 5,
+      "8": 4,
+      "7": 3,
+      "9": 2,
+      "15": 1,
+      "12": 1
+    },
+    "evaluation_metrics_frequency": [
+      [
+        "R2",
+        112
+      ],
+      [
+        "RMSE",
+        79
+      ],
+      [
+        "MAE",
+        59
+      ],
+      [
+        "MSE",
+        47
+      ],
+      [
+        "other",
+        26
+      ],
+      [
+        "R",
+        23
+      ],
+      [
+        "MAPE",
+        15
+      ],
+      [
+        "RE",
+        4
+      ],
+      [
+        "adjusted_R2",
+        2
+      ],
+      [
+        "RAE",
+        2
+      ],
+      [
+        "RRSE",
+        2
+      ],
+      [
+        "SSE",
+        1
+      ],
+      [
+        "accuracy",
+        1
+      ],
+      [
+        "precision",
+        1
+      ],
+      [
+        "recall",
+        1
+      ],
+      [
+        "F1-score",
+        1
+      ],
+      [
+        "AUC",
+        1
+      ],
+      [
+        "STD",
+        1
+      ],
+      [
+        "AAPRE",
+        1
+      ],
+      [
+        "NSE",
+        1
+      ],
+      [
+        "RRMSE",
+        1
+      ],
+      [
+        "MAD",
+        1
+      ],
+      [
+        "RSE",
+        1
+      ],
+      [
+        "WAPE",
+        1
+      ],
+      [
+        "VAF",
+        1
+      ],
+      [
+        "MBE",
+        1
+      ]
+    ],
+    "code_available_count": 16,
+    "code_available_rate": 0.127,
+    "data_available_count": 40,
+    "data_available_rate": 0.3175,
+    "compared_with_prior_work_count": 52,
+    "compared_with_prior_work_rate": 0.4127,
+    "software_tools_distribution": {
+      "Python": 51,
+      "MATLAB": 41,
+      "other": 21,
+      "Design Expert": 3,
+      "RASPA": 3,
+      "R": 3,
+      "Design-Expert": 3,
+      "JMP": 2,
+      "SPSS": 2,
+      "Materials Studio": 1,
+      "zeo++": 1,
+      "Weka": 1
+    },
+    "feature_selection_distribution": {
+      "none_reported": 67,
+      "manual": 41,
+      "correlation": 15,
+      "PCA": 2,
+      "RFE": 1
+    }
+  },
+  "discussion": {
+    "interpretability_methods_frequency": [
+      [
+        "feature_importance",
+        57
+      ],
+      [
+        "none",
+        41
+      ],
+      [
+        "SHAP",
+        26
+      ],
+      [
+        "sensitivity_analysis",
+        17
+      ],
+      [
+        "PDP",
+        13
+      ],
+      [
+        "Grad-CAM",
+        1
+      ],
+      [
+        "correlation",
+        1
+      ]
+    ],
+    "has_interpretability_count": 84,
+    "has_interpretability_rate": 0.6667,
+    "mechanistic_discussion_count": 78,
+    "mechanistic_discussion_rate": 0.619,
+    "water_type_distribution": {
+      "synthetic": 58,
+      "not_applicable": 49,
+      "not_specified": 13,
+      "both": 3,
+      "real_wastewater": 3
+    },
+    "discusses_scalability_count": 58,
+    "discusses_scalability_rate": 0.4603,
+    "engineering_validation_count": 8,
+    "engineering_validation_rate": 0.0635,
+    "cost_analysis_count": 5,
+    "cost_analysis_rate": 0.0397
+  },
+  "cross_tabulations": {
+    "r2_by_validation_method": {
+      "random_split": {
+        "n": 80,
+        "min": 0.64,
+        "q25": 0.943375,
+        "median": 0.979,
+        "q75": 0.994,
+        "max": 0.99999,
+        "mean": 0.96
+      },
+      "k_fold": {
+        "n": 25,
+        "min": 0.61,
+        "q25": 0.91,
+        "median": 0.9573,
+        "q75": 0.982,
+        "max": 1.0,
+        "mean": 0.93
+      },
+      "none_reported": {
+        "n": 4,
+        "min": 0.99,
+        "q25": 0.996375,
+        "median": 0.9991000000000001,
+        "q75": 0.99975,
+        "max": 0.9999,
+        "mean": 1.0
+      }
+    },
+    "r2_by_data_source": {
+      "experimental": {
+        "n": 48,
+        "min": 0.87,
+        "q25": 0.9716825,
+        "median": 0.98915,
+        "q75": 0.99835,
+        "max": 0.99999,
+        "mean": 0.98
+      },
+      "literature": {
+        "n": 38,
+        "min": 0.61,
+        "q25": 0.912,
+        "median": 0.95735,
+        "q75": 0.988,
+        "max": 0.9998,
+        "mean": 0.93
+      },
+      "database": {
+        "n": 22,
+        "min": 0.852,
+        "q25": 0.9495,
+        "median": 0.973,
+        "q75": 0.989,
+        "max": 1.0,
+        "mean": 0.96
+      },
+      "mixed": {
+        "n": 1,
+        "min": 0.936,
+        "q25": 0.936,
+        "median": 0.936,
+        "q75": 0.936,
+        "max": 0.936,
+        "mean": 0.94
+      }
+    },
+    "algorithm_by_year": {
+      "2018": {
+        "ANN": 2,
+        "RSM": 1
+      },
+      "2019": {
+        "ANN": 7,
+        "LR": 1,
+        "DT": 1,
+        "RSM": 1
+      },
+      "2020": {
+        "ANN": 7,
+        "SVM": 2,
+        "RF": 2,
+        "Bagging": 1,
+        "Ridge": 1
+      },
+      "2021": {
+        "ANN": 6,
+        "RSM": 4,
+        "RF": 3,
+        "GBM": 2,
+        "SVM": 2
+      },
+      "2022": {
+        "ANN": 13,
+        "RF": 7,
+        "GBM": 6,
+        "RSM": 5,
+        "XGBoost": 5
+      },
+      "2023": {
+        "ANN": 19,
+        "RF": 18,
+        "XGBoost": 8,
+        "DT": 7,
+        "SVM": 5
+      },
+      "2024": {
+        "ANN": 16,
+        "RF": 11,
+        "GBM": 6,
+        "XGBoost": 6,
+        "GPR": 4
+      },
+      "2025": {
+        "XGBoost": 9,
+        "ANN": 8,
+        "RF": 8,
+        "GBM": 7,
+        "SVR": 5
+      }
+    },
+    "interpretability_by_year": {
+      "2018": {
+        "has": 2,
+        "total": 2,
+        "rate": 1.0
+      },
+      "2019": {
+        "has": 4,
+        "total": 7,
+        "rate": 0.5714
+      },
+      "2020": {
+        "has": 6,
+        "total": 8,
+        "rate": 0.75
+      },
+      "2021": {
+        "has": 5,
+        "total": 10,
+        "rate": 0.5
+      },
+      "2022": {
+        "has": 17,
+        "total": 23,
+        "rate": 0.7391
+      },
+      "2023": {
+        "has": 19,
+        "total": 33,
+        "rate": 0.5758
+      },
+      "2024": {
+        "has": 21,
+        "total": 31,
+        "rate": 0.6774
+      },
+      "2025": {
+        "has": 10,
+        "total": 12,
+        "rate": 0.8333
+      }
+    },
+    "open_science_by_year": {
+      "2018": {
+        "code": 0,
+        "data": 0,
+        "total": 2,
+        "code_rate": 0.0,
+        "data_rate": 0.0
+      },
+      "2019": {
+        "code": 0,
+        "data": 2,
+        "total": 7,
+        "code_rate": 0.0,
+        "data_rate": 0.2857
+      },
+      "2020": {
+        "code": 1,
+        "data": 1,
+        "total": 8,
+        "code_rate": 0.125,
+        "data_rate": 0.125
+      },
+      "2021": {
+        "code": 1,
+        "data": 4,
+        "total": 10,
+        "code_rate": 0.1,
+        "data_rate": 0.4
+      },
+      "2022": {
+        "code": 1,
+        "data": 8,
+        "total": 23,
+        "code_rate": 0.0435,
+        "data_rate": 0.3478
+      },
+      "2023": {
+        "code": 5,
+        "data": 12,
+        "total": 33,
+        "code_rate": 0.1515,
+        "data_rate": 0.3636
+      },
+      "2024": {
+        "code": 5,
+        "data": 8,
+        "total": 31,
+        "code_rate": 0.1613,
+        "data_rate": 0.2581
+      },
+      "2025": {
+        "code": 3,
+        "data": 5,
+        "total": 12,
+        "code_rate": 0.25,
+        "data_rate": 0.4167
+      }
+    }
+  }
+}
